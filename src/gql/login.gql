@@ -1,0 +1,5 @@
+mutation Login($username: String!, $password: String!) {
+  signIn(signInInput: { username: $username, password: $password }) {
+    token
+  }
+}

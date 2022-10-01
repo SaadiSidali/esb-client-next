@@ -1,0 +1,8 @@
+# Write your query or mutation here
+mutation Signup($email: String!, $password: String!, $username: String!) {
+  signUp(
+    signUpInput: { email: $email, password: $password, username: $username }
+  ) {
+    id
+  }
+}
